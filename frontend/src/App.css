@@ -1,0 +1,153 @@
+*{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* --------------------------------------------------------MEDIA QUERY */
+@media (min-width: 0px) and (max-width: 200px) {
+  .nfontsize{
+    font-size: 18px;
+  }
+  .fshit{
+    font-size: 11px;
+      }
+}
+
+
+@media (min-width: 201px) and (max-width: 480px) {
+  .nfontsize{
+    font-size: 18px;
+  }
+  .fshit{
+    font-size: 15px;
+      }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .nfontsize{
+    font-size: 30px;
+  }
+  .fshit{
+    font-size: 18px;
+      }
+}
+
+
+/* 769px — 1024px: Small screens, laptops. */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nfontsize{
+    font-size: 40px;
+  }
+  .fshit{
+    font-size: 19px;
+      }
+
+   
+}
+
+/* 1025px — 1200px: Desktops, large screens. */
+
+@media (min-width: 1025px)  {
+  .nfontsize{
+    font-size: 35px;
+
+  }
+
+  .nbgpic{
+    background-image: url("./images/h.jpg");
+    background-size: 100% 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .fshit{
+font-size: 19px;
+margin-top: 30px;
+  }
+}
+
+
+
+
+/* ------------------------------------------------------------NAVLINE 2 */
+
+
+ 
+.diva::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: transparent;
+  transition: width 0.3s ease-in-out;
+}
+
+.diva:hover::after {
+  width: 100%;
+  background-color: #5b3669; /* Light purple color */
+  animation: purpleAnimation 0.3s linear;
+}
+
+@keyframes purpleAnimation {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+.aname-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.fonta{
+
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+  
+
+.aname-item:hover {
+  background-color: #e4b4db;
+}
+
+.aname-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.aname-item:hover::after {
+  background-color: lightpurple; /* Change this to the desired shade of light purple */
+}
+
+.adropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 150px;
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.adropdown-link {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.adropdown-link:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* ---------------------------------------------------OVERLAY CSS */
+
